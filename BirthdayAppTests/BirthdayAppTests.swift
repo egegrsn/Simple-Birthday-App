@@ -10,24 +10,17 @@ import XCTest
 
 class BirthdayAppTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testPersonViewModel(){
+        let name = Name(title: "Mr", first: "Ege", last: "Girsen")
+        let dob = Dob(date: "1997-05-24T04:41:13.346Z", age: 25)
+        let person = Results(name: name, dob: dob)
+        
+        let viewModel = PersonViewModel(results: person)
+        XCTAssertEqual(viewModel.age, 25)
+        XCTAssertEqual(viewModel.fullname, "Ege Girsen")
+        XCTAssertEqual(viewModel.initials, "EG")
+        XCTAssertEqual(viewModel.dob, "24/05/1997")
+        
     }
 
 }

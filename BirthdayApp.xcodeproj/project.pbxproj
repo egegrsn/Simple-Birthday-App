@@ -9,24 +9,20 @@
 /* Begin PBXBuildFile section */
 		DC990AC62886BEF4005D4EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC990AC52886BEF4005D4EF1 /* AppDelegate.swift */; };
 		DC990AC82886BEF4005D4EF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC990AC72886BEF4005D4EF1 /* SceneDelegate.swift */; };
-		DC990ACA2886BEF4005D4EF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC990AC92886BEF4005D4EF1 /* ViewController.swift */; };
+		DC990ACA2886BEF4005D4EF1 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC990AC92886BEF4005D4EF1 /* MainController.swift */; };
 		DC990ACD2886BEF4005D4EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC990ACB2886BEF4005D4EF1 /* Main.storyboard */; };
 		DC990ACF2886BEF6005D4EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC990ACE2886BEF6005D4EF1 /* Assets.xcassets */; };
 		DC990AD22886BEF6005D4EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC990AD02886BEF6005D4EF1 /* LaunchScreen.storyboard */; };
 		DC990ADD2886BEF6005D4EF1 /* BirthdayAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC990ADC2886BEF6005D4EF1 /* BirthdayAppTests.swift */; };
-		DC990AE72886BEF6005D4EF1 /* BirthdayAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC990AE62886BEF6005D4EF1 /* BirthdayAppUITests.swift */; };
-		DC990AE92886BEF6005D4EF1 /* BirthdayAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC990AE82886BEF6005D4EF1 /* BirthdayAppUITestsLaunchTests.swift */; };
+		DC990AF72886BFD8005D4EF1 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC990AF62886BFD8005D4EF1 /* PersonViewModel.swift */; };
+		DC990AFA2886C002005D4EF1 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC990AF92886C002005D4EF1 /* PersonModel.swift */; };
+		DC990B052886C146005D4EF1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC990B042886C146005D4EF1 /* Service.swift */; };
+		DC990B092886C1C7005D4EF1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC990B082886C1C7005D4EF1 /* ProfileViewController.swift */; };
+		DC990B0D2886CD20005D4EF1 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC990B0C2886CD20005D4EF1 /* PersonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		DC990AD92886BEF6005D4EF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DC990ABA2886BEF4005D4EF1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DC990AC12886BEF4005D4EF1;
-			remoteInfo = BirthdayApp;
-		};
-		DC990AE32886BEF6005D4EF1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC990ABA2886BEF4005D4EF1 /* Project object */;
 			proxyType = 1;
@@ -39,16 +35,18 @@
 		DC990AC22886BEF4005D4EF1 /* BirthdayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthdayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC990AC52886BEF4005D4EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC990AC72886BEF4005D4EF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DC990AC92886BEF4005D4EF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC990AC92886BEF4005D4EF1 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		DC990ACC2886BEF4005D4EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC990ACE2886BEF6005D4EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC990AD12886BEF6005D4EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC990AD32886BEF6005D4EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC990AD82886BEF6005D4EF1 /* BirthdayAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirthdayAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC990ADC2886BEF6005D4EF1 /* BirthdayAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayAppTests.swift; sourceTree = "<group>"; };
-		DC990AE22886BEF6005D4EF1 /* BirthdayAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirthdayAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC990AE62886BEF6005D4EF1 /* BirthdayAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayAppUITests.swift; sourceTree = "<group>"; };
-		DC990AE82886BEF6005D4EF1 /* BirthdayAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC990AF62886BFD8005D4EF1 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		DC990AF92886C002005D4EF1 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		DC990B042886C146005D4EF1 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		DC990B082886C1C7005D4EF1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DC990B0C2886CD20005D4EF1 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +64,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC990ADF2886BEF6005D4EF1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +72,6 @@
 			children = (
 				DC990AC42886BEF4005D4EF1 /* BirthdayApp */,
 				DC990ADB2886BEF6005D4EF1 /* BirthdayAppTests */,
-				DC990AE52886BEF6005D4EF1 /* BirthdayAppUITests */,
 				DC990AC32886BEF4005D4EF1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +81,6 @@
 			children = (
 				DC990AC22886BEF4005D4EF1 /* BirthdayApp.app */,
 				DC990AD82886BEF6005D4EF1 /* BirthdayAppTests.xctest */,
-				DC990AE22886BEF6005D4EF1 /* BirthdayAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,12 +88,14 @@
 		DC990AC42886BEF4005D4EF1 /* BirthdayApp */ = {
 			isa = PBXGroup;
 			children = (
-				DC990AC52886BEF4005D4EF1 /* AppDelegate.swift */,
-				DC990AC72886BEF4005D4EF1 /* SceneDelegate.swift */,
-				DC990AC92886BEF4005D4EF1 /* ViewController.swift */,
-				DC990ACB2886BEF4005D4EF1 /* Main.storyboard */,
+				DC990B032886C13A005D4EF1 /* Service */,
+				DC990AFB2886C00D005D4EF1 /* View */,
+				DC990AF82886BFDF005D4EF1 /* Model */,
+				DC990AF52886BF97005D4EF1 /* ViewModel */,
+				DC990AFF2886C04A005D4EF1 /* Controller */,
+				DC990B002886C06A005D4EF1 /* Delegate */,
+				DC990B012886C07D005D4EF1 /* StoryBoards */,
 				DC990ACE2886BEF6005D4EF1 /* Assets.xcassets */,
-				DC990AD02886BEF6005D4EF1 /* LaunchScreen.storyboard */,
 				DC990AD32886BEF6005D4EF1 /* Info.plist */,
 			);
 			path = BirthdayApp;
@@ -118,13 +109,63 @@
 			path = BirthdayAppTests;
 			sourceTree = "<group>";
 		};
-		DC990AE52886BEF6005D4EF1 /* BirthdayAppUITests */ = {
+		DC990AF52886BF97005D4EF1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				DC990AE62886BEF6005D4EF1 /* BirthdayAppUITests.swift */,
-				DC990AE82886BEF6005D4EF1 /* BirthdayAppUITestsLaunchTests.swift */,
+				DC990AF62886BFD8005D4EF1 /* PersonViewModel.swift */,
 			);
-			path = BirthdayAppUITests;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DC990AF82886BFDF005D4EF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC990AF92886C002005D4EF1 /* PersonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC990AFB2886C00D005D4EF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC990B0C2886CD20005D4EF1 /* PersonCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC990AFF2886C04A005D4EF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC990AC92886BEF4005D4EF1 /* MainController.swift */,
+				DC990B082886C1C7005D4EF1 /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DC990B002886C06A005D4EF1 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				DC990AC52886BEF4005D4EF1 /* AppDelegate.swift */,
+				DC990AC72886BEF4005D4EF1 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		DC990B012886C07D005D4EF1 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				DC990ACB2886BEF4005D4EF1 /* Main.storyboard */,
+				DC990AD02886BEF6005D4EF1 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		DC990B032886C13A005D4EF1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DC990B042886C146005D4EF1 /* Service.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +206,6 @@
 			productReference = DC990AD82886BEF6005D4EF1 /* BirthdayAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DC990AE12886BEF6005D4EF1 /* BirthdayAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DC990AF22886BEF6005D4EF1 /* Build configuration list for PBXNativeTarget "BirthdayAppUITests" */;
-			buildPhases = (
-				DC990ADE2886BEF6005D4EF1 /* Sources */,
-				DC990ADF2886BEF6005D4EF1 /* Frameworks */,
-				DC990AE02886BEF6005D4EF1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DC990AE42886BEF6005D4EF1 /* PBXTargetDependency */,
-			);
-			name = BirthdayAppUITests;
-			productName = BirthdayAppUITests;
-			productReference = DC990AE22886BEF6005D4EF1 /* BirthdayAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +220,6 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					DC990AD72886BEF6005D4EF1 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = DC990AC12886BEF4005D4EF1;
-					};
-					DC990AE12886BEF6005D4EF1 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = DC990AC12886BEF4005D4EF1;
 					};
@@ -221,7 +240,6 @@
 			targets = (
 				DC990AC12886BEF4005D4EF1 /* BirthdayApp */,
 				DC990AD72886BEF6005D4EF1 /* BirthdayAppTests */,
-				DC990AE12886BEF6005D4EF1 /* BirthdayAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,13 +262,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC990AE02886BEF6005D4EF1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,9 +269,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC990ACA2886BEF4005D4EF1 /* ViewController.swift in Sources */,
+				DC990B052886C146005D4EF1 /* Service.swift in Sources */,
+				DC990ACA2886BEF4005D4EF1 /* MainController.swift in Sources */,
+				DC990B0D2886CD20005D4EF1 /* PersonCell.swift in Sources */,
 				DC990AC62886BEF4005D4EF1 /* AppDelegate.swift in Sources */,
+				DC990AFA2886C002005D4EF1 /* PersonModel.swift in Sources */,
 				DC990AC82886BEF4005D4EF1 /* SceneDelegate.swift in Sources */,
+				DC990B092886C1C7005D4EF1 /* ProfileViewController.swift in Sources */,
+				DC990AF72886BFD8005D4EF1 /* PersonViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,15 +288,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC990ADE2886BEF6005D4EF1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC990AE72886BEF6005D4EF1 /* BirthdayAppUITests.swift in Sources */,
-				DC990AE92886BEF6005D4EF1 /* BirthdayAppUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +295,6 @@
 			isa = PBXTargetDependency;
 			target = DC990AC12886BEF4005D4EF1 /* BirthdayApp */;
 			targetProxy = DC990AD92886BEF6005D4EF1 /* PBXContainerItemProxy */;
-		};
-		DC990AE42886BEF6005D4EF1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DC990AC12886BEF4005D4EF1 /* BirthdayApp */;
-			targetProxy = DC990AE32886BEF6005D4EF1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -534,50 +536,6 @@
 			};
 			name = Release;
 		};
-		DC990AF32886BEF6005D4EF1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.egegrsn.BirthdayAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BirthdayApp;
-			};
-			name = Debug;
-		};
-		DC990AF42886BEF6005D4EF1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.egegrsn.BirthdayAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BirthdayApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -604,15 +562,6 @@
 			buildConfigurations = (
 				DC990AF02886BEF6005D4EF1 /* Debug */,
 				DC990AF12886BEF6005D4EF1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC990AF22886BEF6005D4EF1 /* Build configuration list for PBXNativeTarget "BirthdayAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC990AF32886BEF6005D4EF1 /* Debug */,
-				DC990AF42886BEF6005D4EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
